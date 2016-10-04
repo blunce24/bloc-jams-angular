@@ -5,33 +5,33 @@
 }
 
 html {
-    height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+    height: 100%; 
     font-size: 100%;
 }
 
 body {
-    background-image: url(../assets/images/blurred_backgrounds/blur_bg_3.jpg);
+    background-image: url(/assets/images/blurred_backgrounds/blur_bg_3.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    font-family: 'Open Sans'; /* sets our font to the "Open Sans" typeface */
-    color: white; /* sets the text color to white */
-    min-height: 100%; /* says the height of the body must be, at minimum, 100% of the window */
+    font-family: 'Open Sans'; 
+    color: white; 
+    min-height: 100%; 
     padding-bottom: 200px;
 }
 
 .navbar {
     position: relative;
-    padding: 0.5rem; /* rem is a relative unit - allows for responsive sizing */
-    background-color: rgba(101,18,95,0.5); /* includes alpha (opacity) of text */
-    z-index: 1; /* determines which element is displayed on top of the other */
+    padding: 0.5rem; 
+    background-color: rgba(101,18,95,0.5); 
+    z-index: 1; 
 }
 
 .navbar .logo {
     position: relative; 
     left: 2rem;
-    cursor: pointer; /* produces the finger-pointer icon when you hover over the logo */
+    cursor: pointer; 
 }
 
 .navbar .links-container {
@@ -41,7 +41,7 @@ body {
     right: 0;
     height: 100px;
     color: white;
-    text-decoration: none; /* allows for addition of underlines, strikethroughs etc, set to none for anchor tags which have underline by default */
+    text-decoration: none; 
 }
 
 .links-container .navbar-link {
@@ -50,7 +50,7 @@ body {
     height: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
-    vertical-align: middle; /* orients inline or table-cell content vertically */
+    vertical-align: middle; 
     color: white;
     font-size: 0.625rem;
     letter-spacing: 0.05rem;
@@ -75,11 +75,11 @@ body {
 
 /* Medium and small screens (640 px) */
 @media (min-width: 640px) {
-    html { font-size: 112%; } /* set font size large to make text more legible */
+    html { font-size: 112%; } 
     
     .column {
-        float: left; /* every element will stick to left-most side in its container */
-        padding-left: 1rem; /* add padding to keep some space between gird elements */
+        float: left; 
+        padding-left: 1rem; 
         padding-right: 1rem;
     }
     
