@@ -82,6 +82,9 @@
             } else if (SongPlayer.currentSong === song) {
                 if (currentBuzzObject.isPaused()) {
                     playSong(song);
+                } else {
+                    setSong(song);
+                    playSong(song);
                 }
             }
         };
