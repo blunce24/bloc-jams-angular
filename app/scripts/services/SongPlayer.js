@@ -19,7 +19,7 @@
         * @desc Stops currently playing song and loads new audio file as currentBuzzObject
         * @param {Object} song
         */
-        var setSong = function(song) {
+        SongPlayer.setSong = function(song) {
             if (currentBuzzObject) {
                 stopSong(SongPlayer.currentSong);
             }
@@ -76,14 +76,14 @@
             song = song || SongPlayer.currentSong;
             if (SongPlayer.currentSong !== song) {
                 
-                setSong(song);
+                SongPlayer.setSong(song);
                 playSong(song);
                 
             } else if (SongPlayer.currentSong === song) {
                 if (currentBuzzObject.isPaused()) {
                     playSong(song);
                 } else {
-                    setSong(song);
+                    SongPlayer.setSong(song);
                     playSong(song);
                 }
             }
@@ -112,7 +112,7 @@
                 stopSong(SongPlayer.currentSong);
             } else {
                 var song = currentAlbum.songs[currentSongIndex];
-                setSong(song);
+                SongPlayer.setSong(song);
                 playSong(song);
             }
         };
@@ -129,7 +129,7 @@
                 stopSong(SongPlayer.currentSong);
             } else {
                 var song = currentAlbum.songs[currentSongIndex];
-                setSong(song);
+                SongPlayer.setSong(song);
                 playSong(song);
             }
         };
