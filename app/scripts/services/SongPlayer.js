@@ -151,9 +151,9 @@
         
         /**
         * @function mute
-        * @desc Mutes current song
+        * @desc Toggles mute
         */
-        SongPlayer.mute = function() {
+        SongPlayer.toggleMute = function() {
             if (currentBuzzObject.isMuted()) {
                 currentBuzzObject.unmute();
                 SongPlayer.currentSong.muted = false;
