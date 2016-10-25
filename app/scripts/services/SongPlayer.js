@@ -150,10 +150,24 @@
         };
         
         /**
+        * @function mute
+        * @desc Toggles mute
+        */
+        SongPlayer.toggleMute = function() {
+            if (currentBuzzObject.isMuted()) {
+                currentBuzzObject.unmute();
+                SongPlayer.currentSong.muted = false;
+            } else {
+                currentBuzzObject.mute();
+                SongPlayer.currentSong.muted = true;
+            }
+        };
+        
+        /**
         * @function setCurrentTime
         * @desc Sets the current time in current song
         * @param {Number} time
-        */nvd
+        */
         SongPlayer.setCurrentTime = function(time) {
             if (currentBuzzObject) {
                 currentBuzzObject.setTime(time);
