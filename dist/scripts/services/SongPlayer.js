@@ -185,6 +185,10 @@
             }
         };
         
+        SongPlayer.isSongFinished = function() {
+            return currentBuzzObject.isEnded();
+        };
+        
         return SongPlayer;
     }
     
